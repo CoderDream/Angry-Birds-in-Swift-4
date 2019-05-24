@@ -2,10 +2,7 @@
 ## Movement  
 
 | Left Aligned  | Center Aligned  | Right Aligned |
-|:------------- |:---------------:| -------------:|
-| col 3 is      | some wordy text |         $1600 |
-| col 2 is      | centered        |           $12 |
-| zebra stripes | are neat        |            $1 |
+|:------------- |:----------------| :-------------|
 |class|func moveBy(x: CGFloat, y: CGFloat, duration:TimeInterval)|Creates an action that moves a node relative to its current position.|
 |class|func move(by: CGVector, duration: TimeInterval)|Creates an action that moves a node relative to its current position.|
 |class|func move(to: CGPoint, duration: TimeInterval)|Creates an action that moves a node to a new position.|
