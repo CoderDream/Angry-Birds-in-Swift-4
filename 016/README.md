@@ -135,10 +135,10 @@
 ### Custom Actions  
 | Range  | Method   | Comments |
 |:------------- |:----------------| :-------------|
-|init?(named: String)	|Creates an action of the given name from an action file.|
-|init?(named: String, duration: Time Interval)	|Creates an action of the given name from an action file with a new duration.|
-|init?(named: String, from: URL)	|Creates an action of the given name from an action file.|
-|init?(named: String, from: URL, duration: Time Interval)	|Creates an action of the given name from an action file with a new duration.|
+||init?(named: String)	|Creates an action of the given name from an action file.|
+||init?(named: String, duration: Time Interval)	|Creates an action of the given name from an action file with a new duration.|
+||init?(named: String, from: URL)	|Creates an action of the given name from an action file.|
+||init?(named: String, from: URL, duration: Time Interval)	|Creates an action of the given name from an action file with a new duration.|
 |class|func custom Action(with Duration: Time Interval, action Block: (SKNode, CGFloat)	 -> Void)	|Creates an action that executes a block over a duration.|
 |class|func perform(Selector, on Target: Any)	|Creates an action that calls a method on an object.|
 |class|func run(()	 -> Void)	|Creates an action that executes a block.|
