@@ -14,15 +14,21 @@
 |class|func follow(CGPath, asOffset: Bool, orientToPath: Bool,speed: CGFloat)	|Creates an action that moves the node at a specified speed along a path.|
 
 ### Rotation  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func rotate(by Angle: CGFloat, duration: Time Interval)	|Creates an action that rotates the node by a relative value.|
 |class|func rotate(to Angle: CGFloat, duration: Time Interval)	|Creates an action that rotates the node counterclockwise to an absolute angle.|
 |class|func rotate(to Angle: CGFloat, duration: Time Interval, shortest Unit Arc: Bool)	|Creates an action that rotates the node to an absolute value.|
 
 ### Animation Speed  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func speed(by: CGFloat, duration: Time Interval)	|Creates an action that changes how fast the node executes actions by a relative value.|
 |class|func speed(to: CGFloat, duration: Time Interval)	|Creates an action that changes how fast the node executes actions.|
 
 ### Scaling  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func scale(by: CGFloat, duration: Time Interval)	|Creates an action that changes the x and y scale values of a node by a relative value.|
 |class|func scale(to: CGSize, duration: Time Interval)	|Creates an action that changes the x and y scale values of a node to achieve|
 |class|func scale(to: CGFloat, duration: Time Interval)	|Creates an action that changes the x and y scale values of a node.|
@@ -32,16 +38,22 @@
 |class|func scale Y(to: CGFloat, duration: Time Interval)	|Creates an action that changes the y scale value of a node to a new value.|
 
 ### Display  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func unhide()	|Creates an action that makes a node visible.|
 |class|func hide()	|Creates an action that hides a node.|
 
 ### Transparency
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func fade In(with Duration: Time Interval)	|Creates an action that changes the alpha value of the node to 1.0.|
 |class|func fade Out(with Duration: Time Interval)	|Creates an action that changes the alpha value of the node to 0.0.|
 |class|func fade Alpha(by: CGFloat, duration: Time Interval)	|Creates an action that adjusts the alpha value of a node by a relative value.|
 |class|func fade Alpha(to: CGFloat, duration: Time Interval)	|Creates an action that adjusts the alpha value of a node to a new value.|
 
 ### Content
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func resize(by Width: CGFloat, height: CGFloat, duration: Time Interval)	|Creates an action that adjusts the size of a sprite.|
 |class|func resize(to Height: CGFloat, duration: Time Interval)	|Creates an action that changes the height of a sprite to a new absolute value.|
 |class|func resize(to Width: CGFloat, duration: Time Interval)	|Creates an action that changes the width of a sprite to a new absolute value.|
@@ -58,6 +70,8 @@
 |class|func colorize(with Color Blend Factor: CGFloat, duration: Time Interval)	|Creates an action that animates a sprite’s blend factor.|
 
 ### Physics  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func apply Force(CGVector, duration: Time Interval)	|Creates an action that applies a force to the center of gravity of a node’s physics body.|
 |class|func apply Torque(CGFloat, duration: Time Interval)	|Creates an action that applies a torque to an node’s physics body.|
 |class|func apply Force(CGVector, at: CGPoint, duration: Time|Interval)	|Creates an action that applies an force to a specific point on a node’s physics body.|
@@ -74,23 +88,33 @@
 |class|func falloff(by: Float, duration: Time Interval)	|Creates an action that animates a change of a physics field’s falloff to a value relative to the existing value.|
 
 ### Warping  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func animate(with Warps: [SKWarp Geometry], times:|[NSNumber])	|Creates an action to distort a node through a sequence of SKWarp Geometry objects.|
 |class|func animate(with Warps: [SKWarp Geometry], times:|[NSNumber], restore: Bool)	|Creates an action to distort a node through a sequence of SKWarp Geometry objects.|
 |class|func warp(to: SKWarp Geometry, duration: Time Interval)	|Creates an action to distort a node based using an SKWarp Geometry object.|
 
 ### Removing Actions  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func remove From Parent()	|Creates an action that removes the node from its parent.|
 
 ### Children  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func run(SKAction, on Child With Name: String)	|Creates an action that runs an action on a named child object.|
 
 ### Combined Actions  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func group([SKAction])	|Creates an action that runs a collection of actions in parallel.|
 |class|func sequence([SKAction])	|Creates an action that runs a collection of actions sequentially.|
 |class|func `repeat`(SKAction, count: Int)	|Creates an action that repeats another action a specified number of times.|
 |class|func repeat Forever(SKAction)	|Creates an action that repeats another action forever.|
 
 ### Audio  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func play Sound File Named(String, wait For Completion: Bool)	|Creates an action that plays a sound.|
 |class|func play()	|Creates an action that tells an audio node to start playback.|
 |class|func pause()	|Creates an action that tells an audio node to pause playback.|
@@ -109,6 +133,8 @@
 |class|func stereo Pan(by: Float, duration: Time Interval)	|Creates an action that changes an audio node’s stereo panning by a relative value.|
 
 ### Custom Actions  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |init?(named: String)	|Creates an action of the given name from an action file.|
 |init?(named: String, duration: Time Interval)	|Creates an action of the given name from an action file with a new duration.|
 |init?(named: String, from: URL)	|Creates an action of the given name from an action file.|
@@ -119,19 +145,27 @@
 |class|func run(()	 -> Void, queue: Dispatch Queue)	|Creates an action that executes a block on a specific dispatch queue.|
 
 ### Delay  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func wait(for Duration: Time Interval)	|Creates an action that idles for a specified period of time.|
 |class|func wait(for Duration: Time Interval, with Range: Time Interval)	|Creates an action that idles for a randomized period of time.|
 
 ### Kinematics  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 |class|func reach(to: CGPoint, root Node: SKNode, duration: Time Interval)	|Creates an action that performs an inverse kinematic reach.|
 |class|func reach(to: CGPoint, root Node: SKNode, velocity: CGFloat)	|Creates an action that performs an inverse kinematic reach.|
 |class|func reach(to: SKNode, root Node: SKNode, duration: Time Interval)	|Creates an action that performs an inverse kinematic reach.|
 |class|func reach(to: SKNode, root Node: SKNode, velocity: CGFloat)	|Creates an action that performs an inverse kinematic reach.|
 
 ### Reversing  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 ||func reversed()	|Creates an action that reverses the behavior of another action.|
 
 ### Properties  
+| Range  | Method   | Comments |
+|:------------- |:----------------| :-------------|
 ||var speed: CGFloat|A speed factor that modifies how fast an action runs.|
 ||var timing Mode: SKAction Timing Mode|The timing mode used to execute an action.|
 ||var timing Function: SKAction Timing Function|A block used to customize the timing function.|
